@@ -1,0 +1,38 @@
+# Criar um novo produto
+POST http://localhost:3000/produto
+Content-Type: application/json
+
+{
+  "descricao": "Novo Produto",
+  "preco": 19.99,
+  "estoque": 100,
+  "data": "2024-10-23"
+}
+
+###
+
+# Listar todos os produtos
+GET http://localhost:3000/produtos
+
+###
+
+# Buscar um produto por ID
+GET http://localhost:3000/produto/1
+
+###
+
+# Atualizar um produto
+PUT http://localhost:3000/produto/1
+Content-Type: application/json
+
+{
+  "descricao": "Produto Atualizado",
+  "preco": 25.99,
+  "estoque": 50,
+  "data": "2024-10-23"
+}
+
+###
+
+# Deletar um produto
+DELETE http://localhost:3000/produto/1
